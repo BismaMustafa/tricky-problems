@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If-else</title>
+</head>
+<body>
+   <script>
+   var a=100
+   var b = 500
+   if(a > b){
+   console.log('largest number =',a)
+   }else{
+    console.log('largest number =',b)
+   }
+   var x = 300
+   var y = 700
+   var z = 900
+   if(x > y){
+    console.log('largest number=',x)
+   }else if (y > z){
+    console.log('largest number =',y)
+   }else{
+    console.log('largest number=',z)
+   }
+   var c = 10
+   if(0 < 10){
+    console.log('number is positive')
+   }else if(0 > 10){
+    console.log('number is negative')
+   }else{
+    console.log('number is zero')
+   }
+   var a = 55
+   if(a % 5== 0){
+    console.log('number is divisble by 5')
+   }else if(a % 11==0){
+    console.log('number is divisble by 11')
+   }else{
+    console.log('number is not divisble by 5 or 11')
+   }
+   var x = 10
+   if(x % 2==0){
+    console.log('The number is even',x)
+   }else{
+    console.log('The number is odd')
+   }
+   let leapYear = 29
+   if(leapYear== 29){
+    console.log('year is called leap year')
+   }else{
+    console.log('year is not called leap year')
+   }
+   let alpha = c
+   let vowel = a,e,i,o,u
+   if(alpha == vowel){
+    console.log('c is a vowel')
+   }else{
+    console.log('c is a consonant')
+}
+let weekNo = prompt('Enter week no')
+if(weekNo = 1){
+    alert('Sunday')
+}else if(weekNo = 2){
+    alert('Monday')
+}else if(weekNo = 3){
+    alert('Tuesday')
+}else if(weekNo = 4){
+    alert('Wednesday')
+}else if(weekNo = 5){
+    alert('Thursday')
+}else if(weekNo = 6){
+    alert('Friday')
+}else if(weekNO = 7){
+    alert('Saturday')
+}else{
+    alert('wrong input')
+}
+
+
+
+
+
+let physics =Number(prompt('enter marks of physics out of 100' ,50));
+let chemistry = Number(prompt('enter marks of chemistry out of 100',30));
+let biology = Number(prompt('enter marks of biology out of 100',20));
+let math = Number(prompt('enter marks of math out of 100',72));
+let computer= Number(prompt('enter marks of computer out of 100',70));
+let totalMarks = (physics+chemistry+biology+math+computer);
+let percentage = ((physics+chemistry+biology+math+computer )*100 / 500);
+if(percentage>=90){
+    alert(`Total marks:500 \nObtained Marks: ${totalMarks} \npercentage is ${percentage}% \nGrade A`)
+}else if(percentage>=80){
+    alert(`Total marks:500 \nObtained Marks: ${totalMarks} \npercentage is ${percentage}% \nGradeB `)
+}else if(percentage>=70){
+    alert(`Total marks:500 \nObtained Marks: ${totalMarks} \npercentage is ${percentage}% \nGrade C`)
+}else if(percentage>=60){
+    alert(`Total marks:500 \nObtained Marks: ${totalMarks} \npercentage is ${percentage}% \nGrade D`)
+}else if(percentage>=40){
+    alert(`Total marks:500 \nObtained Marks: ${totalMarks} \npercentage is ${percentage}% \nGrade E`)
+}else if(percentage>=0 && percentage<40){
+    alert(`Total marks:500 \nObtained Marks:${totalMarks} \npercentage is ${percentage}% \nGrade F `)
+}else{
+    alert("Wrong input")
+}
+let salary =Number(prompt('Enter basic salary of an employee',50000));
+let HRA1= Math.round((20*salary)/100)
+let HRA2=Math.round((25*salary)/100)
+let HRA3=Math.round((30*salary)/100)
+let DA1 =Math.round((80*salary)/100)
+let DA2 =Math.round((90*salary)/100)
+let DA3 =Math.round((95*salary)/100)
+if(salary<=10000 ){
+    alert(`salary is ${salary}
+        \ngrosssalary is ${salary + HRA1 + DA1}`)
+    
+    
+}else if(salary<=20000){
+    alert(`salary is ${salary}
+        \ngrosssalary is ${salary + HRA2 + DA2}`)
+    
+    
+}else if(salary>20000 ){
+    alert(`salary is ${salary}
+        \ngrosssalary is ${salary + HRA3 + DA3}`)
+          
+}else{
+   alert('Enter wrong input')
+}
+   </script> 
+</body>
+</html>
